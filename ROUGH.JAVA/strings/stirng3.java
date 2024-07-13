@@ -1,0 +1,24 @@
+import java.util.Scanner;
+// input email and take latters before @ in new string ?
+public class stirng3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String email = sc.next();
+        String name ="";
+        for(int i=0; i<email.length();i++){
+            if(email.charAt(i) == '@'){
+                break;
+
+            }else{
+                name += email.charAt(i);
+            }
+        }
+        System.out.println(name);
+
+
+        
+
+    }
+    
+    
+}
